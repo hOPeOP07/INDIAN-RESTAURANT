@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Restaurant</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        /* Header and Navigation */
+        header {
+            background-color: #b5651d;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav li {
+            display: inline;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffdab9;
+        }
+
+        /* Sections */
+        section {
+            padding: 60px 20px; /* Increased padding */
+            text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        #home img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        /* Menu Section */
+        #menu {
+            background-color: #fff3e0;
+        }
+
+        .menu-category {
+            margin: 60px 0; /* Increased margin */
+        }
+
+        .menu-category img {
+            width: 200px;
+            height: auto;
+            display: block;
+            margin: 0 auto 10px;
+            border-radius: 50%;
+        }
+
+        .menu-category ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        .menu-category li {
+            padding: 5px 0;
+        }
+
+        /* About Us Section */
+        #about {
+            background-color: #f5f5f5;
+            border-top: 2px solid #ddd;
+        }
+
+        /* Contact Section */
+        #contact p {
+            margin: 10px 0;
+        }
+
+        #contact {
+            border-top: 2px solid #ddd;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #b5651d;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: static; /* Changed to static */
+            width: 100%;
+            margin-top: 60px; /* Added margin-top */
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            section {
+                padding: 40px 10px; /* Adjusted padding */
+            }
+
+            .menu-category ul {
+                max-width: 100%;
+            }
+
+            footer {
+                position: static;
+                margin-top: 20px; /* Reduced margin-top for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Spice of India</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <img src="images/restaurant.jpg" alt="Indian Restaurant">
+        <p>Experience the rich and diverse flavors of Indian cuisine at Spice of India.</p>
+    </section>
+
+    <section id="menu">
+        <h2>Menu</h2>
+        <div class="menu-category">
+            <h3>Appetizers</h3>
+            <img src="images/samosa.jpg" alt="Samosa">
+            <ul>
+                <li>Samosa</li>
+                <li>Paneer Tikka</li>
+                <li>Aloo Tikki</li>
+            </ul>
+        </div>
+        <div class="menu-category">
+            <h3>Main Courses</h3>
+            <img src="images/butter_chicken.jpg" alt="Butter Chicken">
+            <ul>
+                <li>Butter Chicken</li>
+                <li>Palak Paneer</li>
+                <li>Chana Masala</li>
+            </ul>
+        </div>
+        <div class="menu-category">
+            <h3>Desserts</h3>
+            <img src="images/gulab_jamun.jpg" alt="Gulab Jamun">
+            <ul>
+                <li>Gulab Jamun</li>
+                <li>Kheer</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Spice of India is a family-owned restaurant offering authentic Indian cuisine.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: info@spiceofindia.com</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Address: 123 Main Street, City, State, ZIP</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Spice of India</p>
+    </footer>
+</body>
+</html>
